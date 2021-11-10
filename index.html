@@ -2,6 +2,9 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -10,31 +13,67 @@
   <body>
 
       <header>
-          <div class="header-logo">
-            <img src="/images/Hot-Wheels-logo.png" alt="Imagem logo">
+        <div class="header-content">
+          <div class="header-container">
+            <div class="header-logo">
+              <h1>Fishing<br/>
+                <span class="span-logo text">Games</span>
+                <br/>Studio<span class="span-logo">.</span>
+              </h1>
+              <img src="/images/FishingGames1.png" alt="Imagem logo">
+            </div>
+            <ul>
+              <li><span> </span><a href="#">Sobre nós</a> <span>|</span></li>
+              <li><span>| </span><a href="#">Lançamentos</a> <span>|</span></li>
+              <li><span>| </span><a href="#">Download</a></li>
+            </ul>
           </div>
-          <div class="header-content">
-            <img src="/images/SFDAnimated2.gif" alt="">
-          </div>
+        </div>
+        <!-- <div class="header-logo">
+          
+        </div> -->
+          
+          <!-- <div class="header-gif">
+            <img src="/images/Animacao.gif" alt="Gif jogo">
+          </div> -->
       </header>
-    <div class="container">
 
       <main>
-        <div class="content">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Nome do Jogo</a></li>
-              <li><a href="#">Sobre</a></li>
-            </ul>
-          </nav>
+        <div class="sidebar">
+          <div class="sidebar-content">
+            <div class="sidebar-nav">
+              <span>GERAL</span>
+              <div>
+                <a href="#">Home</a>
+                <a href="#">Sobre nós</a>
+              </div>
+            </div>
+            <div class="sidebar-nav">
+              <span>JOGOS</span>
+              <div>
+                <a href="#">AttackOnHero</a>
+                <a href="#">AttackAlex (comming soon...)</a>
+              </div>
+            </div>
+          </div>
         </div>
-
+        <!-- para cada <Ancora> deve se ter uma <div class="main-content"> -->
+        <div class="main-container">
+          <div class="main-content">
+            <h1>Latest News</h1>
+            <p>* Some server stability improvements and bug fixes.
+              * Fixed a bug where sounds for StrengthBoost and SpeedBoost wouldn't always play when activated by the player.</p>
+          </div>
+          <div class="main-content">
+            <h1>Filcher news: Inside at Last podcast, Stealth Docs review</h1>
+            <p>I (Johan) had the honour of guesting the Inside At Last podcast along with Stealth Docs to chat about Thief, Filcher, and more! I was pretty nervous, but think I occasionally made sense. It was hella fun, hope you enjoy it!</p>
+          </div>
+        <!-- <a href="/images/Hot-Wheels-logo.png" download>download</a> -->
+        </div>
       </main>
       <footer>
         
       </footer>
-    </div>
 
   </body>
 </html>
