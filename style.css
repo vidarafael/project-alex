@@ -22,7 +22,6 @@ li {
 
 /* ------------ HEADER ---------------*/
 header {
-  border-bottom: 2px solid white;
 }
 
 .header-content {
@@ -37,6 +36,7 @@ header {
 .header-container {
   max-width: 1520px;
   margin: 0 auto;
+  border-bottom: 2px solid white;
 }
 
 .span-logo {
@@ -56,14 +56,14 @@ header {
 
 .header-container ul {
   margin-top: 35px;
-  margin-left: auto;
   display: flex;
   align-items: center;
+  width: 700px;
+  justify-content: space-evenly;
   font-size: 26px;
 }
 
 .header-container ul li {
-  margin-right: 100px;
   font-size: 24px;
 }
 
@@ -141,6 +141,12 @@ main {
   text-align: center;
 }
 
+.change-content.ativo {
+  color: rgb(161, 0, 161);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .sidebar-nav span {
   font-size: 18px;
   color: gray;
@@ -167,10 +173,143 @@ main {
 
 .main-content {
   margin-bottom: 25px;
+  display: none;
+}
+
+.main-content.ativo {
+  display: block;
+  animation: anime-content 1s forwards;
+}
+
+@keyframes anime-content {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .main-content h1 {
   color: rgb(161, 0, 161);
   border-bottom: 1px solid white;
   margin-bottom: 10px;
+}
+
+#steam {
+  width: 550px;
+  padding: 15px;
+  background-color: #282e39;
+  margin: 15px auto 0;
+}
+
+#steam header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#steam header h1 {
+  color: white;
+  font-size: 22px;
+  border-bottom: none;
+}
+
+#steam header h1 span {
+  color: gray;
+}
+
+#steam header img {
+  width: 40px;
+}
+
+#steam .steam-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#steam .steam-content img {
+  width: 250px;
+  margin-right: 10px;
+}
+
+#steam .steam-content p {
+  font-size: 14px;
+}
+
+#steam footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#steam footer img {
+  width: 22px;
+  height: 22px;
+}
+
+#steam footer div {
+  display: flex;
+  transform: translateY(30px);
+}
+
+#steam footer div p {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(148, 148, 148);
+  background-color: black;
+  text-align: center;
+}
+
+#steam footer div button {
+  cursor: pointer;
+  width: 160px;
+  background-image: linear-gradient(
+    to right,
+    #6fa720 0%,
+    #588a1b 51%,
+    #243a04 100%
+  );
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+
+  box-shadow: 0 0 20px black;
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+
+#steam footer div button:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+}
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
