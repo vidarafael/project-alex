@@ -6,7 +6,7 @@
 
 body {
   /* background-color: #0a0c0f; */
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -118,8 +118,8 @@ main {
   width: 325px;
   height: 500px;
 
-  background-color: rgb(0, 0, 0);
-  border: 1px solid white;
+  background-color: rgb(3, 3, 3);
+  box-shadow: 0 0 5px rgb(161, 0, 161);
   border-radius: 10px;
   padding: 30px 0;
 }
@@ -141,9 +141,19 @@ main {
   text-align: center;
 }
 
+.sidebar-right {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+.sidebar-right img {
+  border-radius: 5px;
+  box-shadow: 0 0 20px white;
+}
+
 .change-content.ativo {
   color: rgb(161, 0, 161);
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -194,8 +204,7 @@ main {
 
 .main-content h1 {
   color: rgb(161, 0, 161);
-  border-bottom: 1px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #steam {
