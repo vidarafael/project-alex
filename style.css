@@ -119,7 +119,7 @@ main {
   height: 500px;
 
   background-color: rgb(3, 3, 3);
-  box-shadow: 0 0 5px rgb(161, 0, 161);
+  box-shadow: 0 0 8px rgb(161, 0, 161);
   border-radius: 10px;
   padding: 30px 0;
 }
@@ -152,14 +152,31 @@ main {
   box-shadow: 0 0 20px white;
 }
 
+.sibebar-theme-geral {
+  font-size: 18px;
+  color: gray;
+}
+
+.sibebar-theme-jogos {
+  font-size: 18px;
+  color: gray;
+}
+
+.sibebar-theme-geral.ativo {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
+.sibebar-theme-jogos.ativo {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
 .change-content.ativo {
   color: rgb(161, 0, 161);
   font-weight: bold;
-}
-
-.sidebar-nav span {
-  font-size: 18px;
-  color: gray;
 }
 
 .sidebar-nav div a {
@@ -173,7 +190,6 @@ main {
 
 .sidebar-nav div a:hover {
   color: rgb(161, 0, 161);
-  text-decoration: underline;
 }
 /* ------------ /SIDEBAR ---------------*/
 .main-container {
@@ -321,4 +337,13 @@ main {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
 }
