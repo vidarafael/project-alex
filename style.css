@@ -477,7 +477,8 @@ main {
   .sidebar-right {
     position: absolute;
     top: auto;
-    bottom: 8px;
+    bottom: 0px;
+    width: 300px;
   }
 
   .sidebar-right img {
