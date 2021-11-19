@@ -463,15 +463,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    gap: 15px;
-    text-align: center;
+  main {
+    position: initial;
+  }
+
+  body {
+    position: relative;
+    height: calc(100% + 300px);
   }
 
   .sidebar-right {
-    display: none;
-    right: 30px;
-    top: 0;
+    position: absolute;
+    top: auto;
+    bottom: 8px;
   }
 
   .sidebar-right img {
@@ -504,17 +510,6 @@ main {
   .main-content.ativo {
     display: block;
     animation: anime-content 1s forwards;
-  }
-
-  @keyframes anime-content {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
   }
 
   .main-content h1 {
