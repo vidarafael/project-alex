@@ -383,6 +383,10 @@ main {
   text-decoration: none;
 }
 
+.footer-responsive {
+  display: none;
+}
+
 @media (max-width: 576px) {
   /*-------HEADER--------*/
   .header-content {
@@ -471,46 +475,22 @@ main {
 
   body {
     position: relative;
-    height: calc(100% + 300px);
   }
 
   .sidebar-right {
-    position: absolute;
-    top: auto;
-    bottom: 0px;
-    width: 300px;
-  }
-
-  .sidebar-right img {
-    border-radius: 5px;
-    box-shadow: 0 0 20px white;
-  }
-
-  .sibebar-theme-geral {
-    font-size: 18px;
-    color: gray;
-  }
-
-  .sibebar-theme-jogos {
-    font-size: 18px;
-    color: gray;
-  }
-  /*---------- /SIDEBAR -----------*/
-
-  /* --------- CONTENT ---------- */
-  .main-container {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .main-content {
-    margin-bottom: 25px;
     display: none;
   }
 
-  .main-content.ativo {
-    display: block;
-    animation: anime-content 1s forwards;
+  /*---------- /SIDEBAR -----------*/
+
+  /* --------- CONTENT ---------- */
+  main {
+    height: auto;
+  }
+
+  .main-container {
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .main-content h1 {
@@ -518,10 +498,197 @@ main {
     margin-bottom: 20px;
     text-align: center;
   }
+
   /* --------- /CONTENT ---------- */
+
+  /* ---------- FOOTER ----------*/
+  .footer-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 50px auto;
+  }
+
+  .footer-responsive img {
+    width: 135px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px white;
+  }
+  /* ---------- /FOOTER ----------*/
+
+  /* ------------ STEAM -------------- */
+  #steam {
+    max-width: 320px;
+    padding: 15px;
+    background-color: #282e39;
+    margin: 50px auto 0;
+  }
+
+  #steam header h1 {
+    font-size: 18px;
+  }
+
+  #steam header img {
+    width: 25px;
+  }
+
+  #steam .steam-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 25px;
+  }
+
+  #steam .steam-content img {
+    width: 100%;
+    margin-right: 10px;
+  }
 }
 
+/*********/
+
 @media (min-width: 577px) and (max-width: 768px) {
+  /*-------HEADER--------*/
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .header-container {
+    max-width: 576px;
+    margin: 0 auto;
+    border-bottom: 0;
+    padding: 0px 20px;
+  }
+
+  .header-container img {
+    margin-left: 25px;
+    width: 175x;
+    height: 175px;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    width: 320px;
+    top: 240px;
+    left: 25%;
+    right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 320px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+
+    /* box-shadow: 0 0 20px black; */
+    /* background-size: 200% auto; */
+    transition: filter 0.2s;
+  }
+
+  .header-btn-absolut button:hover {
+    filter: opacity(0.8);
+  }
+  /*-------/HEADER--------*/
+
+  /*---------- SIDEBAR -----------*/
+
+  .sidebar {
+    position: initial;
+    display: flex;
+    width: 350px;
+    height: 200px;
+    margin: 100px auto 50px;
+    transform: translateX(10px);
+    justify-content: center;
+
+    padding: 30px 15px;
+  }
+
+  .sidebar-content {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-nav a + a {
+    margin-top: 10px;
+  }
+
+  main {
+    position: initial;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .sidebar-right {
+    display: none;
+  }
+
+  /*---------- /SIDEBAR -----------*/
+
+  /* --------- CONTENT ---------- */
+  main {
+    height: auto;
+  }
+
+  .main-content h1 {
+    color: rgb(161, 0, 161);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .main-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* --------- /CONTENT ---------- */
+
+  /* ---------- FOOTER ----------*/
+  .footer-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 50px auto 0px;
+  }
+
+  .footer-responsive img {
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px white;
+  }
+  /* ---------- /FOOTER ----------*/
+
+  /* ---------- STEAM -------------*/
+  #steam {
+    max-width: 500px;
+    padding: 15px;
+    background-color: #282e39;
+    margin: 50px auto 0;
+  }
+  /* ---------- /STEAM -------------*/
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
