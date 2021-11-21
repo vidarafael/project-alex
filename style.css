@@ -63,7 +63,7 @@ header {
   height: 250px;
 }
 
-.header-container ul {
+/* .header-container ul {
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@ header {
 
 .header-container ul li span {
   color: rgb(161, 0, 161);
-}
+} */
 
 .header-logo {
   display: flex;
@@ -102,7 +102,7 @@ header {
 
 .header-btn-absolut button {
   cursor: pointer;
-  width: 250px;
+  width: 230px;
   height: 50px;
   font-size: 24px;
   /* background-image: linear-gradient(
@@ -128,25 +128,6 @@ header {
 }
 
 /* --------------  /Header ----------------*/
-
-/*
-.header-logo img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 5px solid white;
-
-  background-position: center;
-  background-size: cover;
-}
-
-.header-gif img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  object-fit: cover;
-} */
 
 main {
   margin-top: 50px;
@@ -264,7 +245,11 @@ main {
 
 .main-content h1 {
   color: rgb(161, 0, 161);
-  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.main-content p {
+  margin: 10px 0;
 }
 
 #steam {
@@ -406,8 +391,8 @@ main {
 
   .header-container img {
     margin-left: 25px;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
   }
 
   .header-btn-absolut {
@@ -567,7 +552,7 @@ main {
 
   .header-container img {
     margin-left: 25px;
-    width: 175x;
+    width: 175px;
     height: 175px;
   }
 
@@ -692,4 +677,286 @@ main {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  /*-------HEADER--------*/
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .header-container {
+    max-width: 576px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    padding: 0px 20px 10px;
+  }
+
+  .header-container img {
+    margin-left: 25px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(161, 0, 161);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+    transition: filter 0.2s;
+  }
+  /*-------/HEADER--------*/
+
+  /*---------- SIDEBAR -----------*/
+
+  .sidebar {
+    position: initial;
+    display: flex;
+    width: 450px;
+    height: 200px;
+    margin: 50px auto 50px;
+    transform: translateX(10px);
+    justify-content: center;
+
+    padding: 30px 15px;
+  }
+
+  .sidebar-content {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-nav a + a {
+    margin-top: 10px;
+  }
+
+  main {
+    position: initial;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .sidebar-right {
+    display: none;
+  }
+
+  /*---------- /SIDEBAR -----------*/
+
+  /* --------- CONTENT ---------- */
+  main {
+    height: auto;
+  }
+
+  .main-content h1 {
+    color: rgb(161, 0, 161);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .main-content p {
+    font-size: 18px;
+  }
+
+  .main-container {
+    max-width: 500px;
+    margin: 0 auto 100px;
+  }
+
+  /* --------- /CONTENT ---------- */
+
+  /* ---------- FOOTER ----------*/
+  .footer-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 50px auto 0px;
+  }
+
+  .footer-responsive img {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px white;
+  }
+  /* ---------- /FOOTER ----------*/
+
+  /* ---------- STEAM -------------*/
+  #steam {
+    max-width: 700px;
+    padding: 15px;
+    background-color: #282e39;
+    margin: 70px auto 100px;
+  }
+  /* ---------- /STEAM -------------*/
+}
+
+@media (min-width: 993px) and (max-width: 1650px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    width: 100%;
+    padding: 15px 0 0;
+    padding: 25px 50px;
+  }
+
+  .header-container {
+    max-width: 1520px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+  }
+
+  .span-logo {
+    color: rgb(161, 0, 161);
+  }
+
+  .span-logo.text {
+    display: inline-block;
+    margin-left: 25px;
+  }
+
+  .header-container img {
+    margin-left: 25px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .header-btn-absolut button:hover {
+    filter: opacity(0.8);
+  }
+
+  /* --------------  /Header ----------------*/
+
+  main {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  /*---------- SIDEBAR -----------*/
+  .sidebar {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 250px;
+    height: 350px;
+
+    background-color: rgb(3, 3, 3);
+    box-shadow: 0 0 8px rgb(161, 0, 161);
+    border-radius: 10px;
+    padding: 30px 0;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+    text-align: center;
+  }
+
+  .sidebar-right {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .sidebar-right img {
+    border-radius: 5px;
+    box-shadow: 0 0 20px white;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* ------------ /SIDEBAR ---------------*/
+  .main-container {
+    max-width: 600px;
+    margin-left: auto;
+  }
+
+  .main-content {
+    margin-bottom: 25px;
+    display: none;
+    margin-left: 150px;
+  }
+
+  .main-content h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* ---------- FOOTER ----------*/
+  .footer-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 100px auto 0px;
+  }
+
+  .footer-responsive img {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px white;
+  }
+  /* ---------- /FOOTER ----------*/
 }
