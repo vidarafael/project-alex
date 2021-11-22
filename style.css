@@ -177,6 +177,14 @@ main {
   box-shadow: 0 0 20px white;
 }
 
+.sidebar-right img:hover {
+  filter: opacity(0.8);
+}
+
+.footer-responsive img:hover {
+  filter: opacity(0.8);
+}
+
 .sibebar-theme-geral {
   font-size: 18px;
   color: gray;

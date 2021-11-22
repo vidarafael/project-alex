@@ -502,7 +502,7 @@ header {
   .nossos-jogos span {
     display: inline-block;
     color: rgb(161, 0, 161);
-    margin-left: 80px;
+    margin-left: 120px;
   }
 
   /* --------- /CONTENT ---------- */
@@ -515,4 +515,117 @@ header {
     margin: 50px auto 0;
   }
   /* ---------- /STEAM -------------*/
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /*-------HEADER--------*/
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .header-container {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 0px 20px 10px;
+  }
+
+  .header-container img {
+    margin-left: 25px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    background-color: rgb(161, 0, 161);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+    transition: filter 0.2s;
+  }
+  /*-------/HEADER--------*/
+
+  /* --------- CONTENT ---------- */
+
+  .main-content p {
+    font-size: 18px;
+  }
+
+  .main-container {
+    max-width: 500px;
+    margin: 0 auto 100px;
+  }
+
+  /* --------- /CONTENT ---------- */
+
+  /* ---------- STEAM -------------*/
+  #steam {
+    max-width: 700px;
+    padding: 15px;
+    background-color: #282e39;
+    margin: 70px auto 100px;
+  }
+  /* ---------- /STEAM -------------*/
+}
+
+@media (min-width: 993px) and (max-width: 1650px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    width: 100%;
+    padding: 25px 50px;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .header-btn-absolut button:hover {
+    filter: opacity(0.8);
+  }
+
+  /* --------------  /Header ----------------*/
+
+  .main-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    margin-bottom: 25px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .steam-content p {
+    font-size: 14px;
+  }
 }
