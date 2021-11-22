@@ -432,3 +432,87 @@ header {
     margin-right: 10px;
   }
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /*-------HEADER--------*/
+  .header-content {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .header-container {
+    max-width: 576px;
+    margin: 0 auto;
+    border-bottom: 0;
+    padding: 0px 20px;
+  }
+
+  .header-container img {
+    margin-left: 25px;
+    width: 175px;
+    height: 175px;
+  }
+
+  .header-btn-absolut {
+    position: absolute;
+    width: 220px;
+    top: 240px;
+    left: 25%;
+    right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-btn-absolut button {
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+
+    /* box-shadow: 0 0 20px black; */
+    /* background-size: 200% auto; */
+    transition: filter 0.2s;
+  }
+
+  .header-btn-absolut button:hover {
+    filter: opacity(0.8);
+  }
+  /*-------/HEADER--------*/
+
+  /* --------- CONTENT ---------- */
+  .main-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .nossos-jogos {
+    margin: 120px auto;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .nossos-jogos span {
+    display: inline-block;
+    color: rgb(161, 0, 161);
+    margin-left: 80px;
+  }
+
+  /* --------- /CONTENT ---------- */
+
+  /* ---------- STEAM -------------*/
+  #steam {
+    max-width: 500px;
+    padding: 15px;
+    background-color: #282e39;
+    margin: 50px auto 0;
+  }
+  /* ---------- /STEAM -------------*/
+}
