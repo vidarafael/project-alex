@@ -141,7 +141,7 @@ main {
   left: 30px;
   top: 0;
   width: 325px;
-  height: 500px;
+  height: 300px;
 
   background-color: rgb(3, 3, 3);
   box-shadow: 0 0 8px rgb(161, 0, 161);
@@ -391,8 +391,8 @@ main {
 
   .header-container img {
     margin-left: 25px;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
   }
 
   .header-btn-absolut {
