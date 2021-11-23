@@ -254,6 +254,7 @@ main {
 .main-content h1 {
   color: rgb(161, 0, 161);
   margin-top: 30px;
+  border-bottom: 1px solid rgb(161, 0, 161);
 }
 
 .main-content p {
@@ -335,11 +336,13 @@ main {
 #steam footer div button {
   cursor: pointer;
   width: 160px;
+  height: 50px;
+  transform: translateY(10px);
   background-image: linear-gradient(
     to right,
-    #6fa720 0%,
-    #588a1b 51%,
-    #243a04 100%
+    rgb(161, 0, 161) 0%,
+    rgb(100, 1, 100) 51%,
+    rgb(70, 1, 70) 100%
   );
   border: none;
   border-radius: 5px;
@@ -498,7 +501,8 @@ main {
   .footer-responsive {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     max-width: 300px;
     margin: 50px auto;
   }
@@ -581,7 +585,6 @@ main {
     font-size: 24px;
     border: none;
     border-radius: 5px;
-    font-size: 22px;
     color: white;
     font-weight: bold;
 
@@ -662,7 +665,9 @@ main {
   .footer-responsive {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+
     max-width: 500px;
     margin: 50px auto 0px;
   }
@@ -800,7 +805,9 @@ main {
   .footer-responsive {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    justify-content: center;
     max-width: 700px;
     margin: 50px auto 0px;
   }
@@ -955,7 +962,8 @@ main {
   .footer-responsive {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     max-width: 700px;
     margin: 100px auto 0px;
   }

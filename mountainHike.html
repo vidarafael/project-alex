@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./download.css">
+    <link rel="icon" href="/images/peixe.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Fishing Games Studio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="header-container">
+          <div class="header-logo">
+            <h1>Fishing<br/>
+              <span class="span-logo text">Games</span>
+              <br/>Studio<span class="span-logo">.</span>
+            </h1>
+            <img src="./images/peixe.png" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="header-btn-absolut">
+        <a href="./index.html"><button>◀ Home</button></a>
+      </div>
+    </header>
+
+    <main>
+
+      <style>
+    
+        .swiper-container {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 250px;
+          height: 250px;
+          background: black;
+         
+        }
+        
+        .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          border-radius: 50%;
+          background: rgb(248 245 245);
+          opacity: .2;
+        }
+        .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: rgb(161, 0, 161);
+        }
+        @media (max-width: 576px) { 
+          .div-text-header .material-icons.md-48 {
+            font-size: 35px;
+          }
+          .anime-favorite .material-icons.md-48 {
+            font-size: 48px;
+          }
+          .swiper-slide {
+            width: 250px;
+            height: 250px;
+          }
+        }
+        
+      </style>
+     
+      <div class="main-container">
+        <h1 class="nossos-jogos">Nossos <br><span>Jogos</span>.</h1>
+        <div class="main-content">
+          <h1>Mountain Hike</h1>
+          <h2>
+            SOBRE ESTE JOGO
+          </h2>
+          <p class="main-content-p">
+            Desenvolvido para uma gamejam, Mountain Hike tem a intenção de apresentar 
+            como pode ser divertido e relativamente fácil desenvolver um jogo 2d de plataforma,
+            assim incentivando desenvolvedores indies a apresentarem suas ideias, por mais malucas
+            que pareçam.
+            O jogo consiste em saltar, andar e atirar e pretendemos atualizar em breve.
+          </p>
+
+          <h2>IMAGENS</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="game-favorite"  style="background-image: url('/images/games/mountainHike/unk.png')">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="game-favorite"  style="background-image: url('/images/games/mountainHike/unk2.png')">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="game-favorite"  style="background-image: url('/images/games/mountainHike/unk3.png')">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="game-favorite"  style="background-image: url('/images/games/mountainHike/unk4.png');">
+                  </div>
+                </div>
+            </div>
+          <div class="swiper-pagination"></div>
+          </div>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          
+          <h2></h2>
+          <div id="steam">
+            <header>
+              <h1>Jogar <span>Mountain Hike</span></h1>
+            </header>
+            <div class="steam-content">
+              <img src="./images/Animacao.gif" alt="Imagem do jogo">
+              <div>
+                <p>
+                  Use AWSD para se mover, botão esquerdo do mouse para atirar e espaço para saltar.
+                  um jogo 2d plataform shooter, apenas com modelos de teste para apresentar a mecânica e
+                  facilidade de construção de áreas. 
+                </p>
+              </div>
+            </div>
+            <footer>
+              <img src="./images/platform_win.png" alt="icon windows">
+            </footer>
+          </div>
+
+          <h2>BAIXE AQUI</h2>
+          <div class="content-download">
+            <a href="./download/lifetime/ALifetimeofAdventures.zip" download>
+              <button>Baixar</button>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+    </main>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        loop: false,
+        
+      });
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
